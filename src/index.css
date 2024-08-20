@@ -5,9 +5,305 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  background-color: rgb(41, 41, 41);
+  margin: 0px;
+}
+
+hr{
+  border-color: rgb(100, 100, 100);
+  width: 100%;
+}
+
+.line-img {
+  border-color: #71FF40;
+  width: 198px;
+
+}
+
+
+
+/* HEADER */
+
+.header-container{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-logo{
+  color: #71FF40;
+  width: 120px;
+}
+
+.header-nav{
+  height: 20px;
+  width: 230px;
+}
+
+.header-nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0px 10px;
+}
+
+/* MAIN */
+
+.main-container {
+  height: 100%;
+}
+
+.main-inicio {
+  margin: 20px 20px 0px 20px;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 400px;
+  color: white;
+}
+
+.main-section-txt{
+  color: white;
+}
+
+.main-section img{
+  width: 120%;
+}
+
+.social-icons > a{
+  margin: 0px 13px 0px 0px;
+  font-size: 23px;
+  color: white;
+}
+
+/* SOBRE */
+.main-sobre{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 20px 0px 20px;
+}
+
+.div-sobre{
+
+  margin: 20px 20px 20px 20px;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+
+.div-sobre-img{ 
+  width: 200px;
+  height: 300px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.div-sobre-img img{
+  width: 100%;
+  border-radius: 7px;
+}
+
+
+.div-sobre-txt{
+  margin-left: 40px;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+/* TECNOLOGIAS */
+
+.container-tecnologias{
+  margin: 20px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.div-tecnologia{
+  height: 80px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-tecnologia {
+  height: 500px;
+  width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.tecno-box{
+  width: 300px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tecno-box a{
+  font-size: 100px;
+}
+
+/* Projetos */
+
+.container-projetos {
+  margin: 20px 20px 0px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+
+}
+
+.box-projetos{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.projetos {
+  border: 1px solid grey;
+  border-radius: 10px;
+  height: 380px;
+  width: 280px;
+  margin: 0px 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projetos img{
+  width: 100%;
+  height: 225px;
+}
+
+.desc-projeto{
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 0px 5px;
+  font-size: 15px;
+}
+
+.button-project{
+  border: 1px solid rgb(34, 34, 34);
+  width: 76px;
+  padding: 10px;
+  border-radius: 7px;
+  margin-top: 10px;
+  background-color: rgb(36, 36, 36);
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* Footer */
+
+footer{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(0, 162, 255);
+}
+
+/* Responsividade */
+
+@media only screen and (min-width: 1040px) and (max-width: 1440px){
+  .box-tecnologia {
+    width: 1100px;
+  }
+
+  .box-projetos{
+    width: 600px;
+  }
+
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1024px){
+  .box-tecnologia {
+    width: 800px;
+  }
+
+  .box-projetos{
+    width: 200px;
+  }
+  
+  .projetos{
+
+    height: 290px;
+    width: 220px;
+    margin: 0px 20px;
+  }
+
+  .desc-projeto{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0px 5px;
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width: 400) and (max-width: 768){
+  .box-tecnologia {
+    width: 800px;
+  }
+
+  .box-projetos{
+    width: 200px;
+  }
+  
+  .box-projetos{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 }
